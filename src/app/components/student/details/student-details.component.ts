@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
  import { Component, OnInit } from '@angular/core';
  import {Validators, FormBuilder, FormGroup} from '@angular/forms';
  import { RouterModule, Routes ,Router,ActivatedRoute} from '@angular/router';
@@ -21,7 +19,7 @@
  export class StudentDetailsComponent implements OnInit {
  	index:any;
  	studentDetail:any;
- 	constructor(private router: Router, private route: ActivatedRoute, private studentService:StudentService,private toastr: ToastrService) { 
+ 	constructor(private router: Router, private route: ActivatedRoute, private studentService:StudentService,private toastr: ToastrService) {
  		// Get user detail index number sent in params
  		this.route.params.subscribe(params => {
  			this.index = params['id'];
@@ -34,7 +32,7 @@
  	ngOnInit() {
  	}
 
- 	// Get student details 
+ 	// Get student details
  	getStudentDetails(index:number){
  		let getStudentDetail = this.studentService.getStudentDetails(index);
  		if(getStudentDetail) {
@@ -45,6 +43,3 @@
 
  }
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */

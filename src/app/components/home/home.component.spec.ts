@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
@@ -28,6 +26,3 @@ describe('HomeComponent', () => {
   });
 });
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */

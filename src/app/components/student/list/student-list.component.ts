@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
  import { Component, OnInit } from '@angular/core';
  import { ToastrService } from 'ngx-toastr';
@@ -21,7 +19,7 @@
  	studentList:any;
  	studentListData:any;
  	constructor(private studentService:StudentService,private toastr: ToastrService) { }
- 	// Call student list function on page load 
+ 	// Call student list function on page load
  	ngOnInit() {
  		this.getStudentList();
  	}
@@ -48,11 +46,9 @@
  			let studentDelete = this.studentService.deleteStudent(index);
  			if(studentDelete) {
  				this.toastr.success("Success", "Student Deleted");
- 			} 
+ 			}
  			this.getStudentList();
  		}
  	}
  }
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+

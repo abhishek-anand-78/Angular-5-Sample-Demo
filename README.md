@@ -1,5 +1,4 @@
-# Angular 5 Basic Demo CRUD Application/Project for Beginners
-### Created By [Sangwin Gawande](http://imsangwin.com)
+# Angular 5 Basic Demo CRUD Application/Project to be hosted on Google Cloud Run
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
@@ -47,14 +46,28 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Containerization
+1. Build the docker image
+docker build -t student-management .
+2. Tag the docker image and push to Artifact Registry
+docker tag student-management:latest gcr.io/$DEVSHELL_PROJECT_ID/student-management
+gcloud auth configure docker
+docker push gcr.io/$DEVSHELL_PROJECT_ID/student-management
 
-## Running end-to-end tests
+## Push to Cloud Run
+gcloud run deploy student-management-run \
+--image gcr.io/$DEVSHELL_PROJECT_ID/student-management \
+--concurrency 80 \
+--memory 512Mi --cpu 1 \
+--platform managed \
+--region asia-south1 \
+--allow-unauthenticated
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Service Url is then generated which can be opened in any browser.
 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+To get more info on Cloud Run https://cloud.google.com/sdk/gcloud/reference/run

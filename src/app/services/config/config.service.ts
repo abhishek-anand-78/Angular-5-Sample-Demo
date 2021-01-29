@@ -1,6 +1,3 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
 
 import { Injectable } from '@angular/core';
 import { AbstractControl, ValidatorFn } from '@angular/forms';
@@ -67,6 +64,3 @@ function slideToLeft() {
 
 
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */

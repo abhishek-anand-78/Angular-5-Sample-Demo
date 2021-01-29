@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
 import { FilterPipe } from './filter.pipe';
 
@@ -11,6 +9,4 @@ describe('FilterPipe', () => {
   });
 });
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+

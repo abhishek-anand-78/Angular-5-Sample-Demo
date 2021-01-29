@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
  import { Injectable } from '@angular/core';
 
@@ -41,7 +39,7 @@
              code : 503,
              message : "Email Address Already In Use",
              data : null
-           }    
+           }
            return returnData;
          }
        }
@@ -52,8 +50,8 @@
          code : 200,
          message : "Student Successfully Updated",
          data : JSON.parse(localStorage.getItem('students'))
-       }    
-     }else{      
+       }
+     }else{
        data.id = this.generateRandomID();
        for (var i = 0; i < studentList.length; i++) {
          if (studentList[i].email == data.email) {
@@ -61,7 +59,7 @@
              code : 503,
              message : "Email Address Already In Use",
              data : null
-           }    
+           }
            return returnData;
          }
        }
@@ -73,7 +71,7 @@
          code : 200,
          message : "Student Successfully Added",
          data : JSON.parse(localStorage.getItem('students'))
-       }    
+       }
      }
      return returnData;
    }
@@ -115,6 +113,4 @@
    }
 
  }
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+

@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
 import { TestBed, inject } from '@angular/core/testing';
 
@@ -17,7 +15,3 @@ describe('StudentService', () => {
     expect(service).toBeTruthy();
   }));
 });
-
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */

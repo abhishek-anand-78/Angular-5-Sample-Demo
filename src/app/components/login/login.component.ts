@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
 import { Component, OnInit } from '@angular/core';
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
@@ -19,7 +17,7 @@ import { routerTransition } from '../../services/config/config.service';
 })
 export class LoginComponent implements OnInit {
 	private loginForm : FormGroup;
-	constructor(private formBuilder: FormBuilder,private router: Router, private userService:UserService,private toastr: ToastrService) { 
+	constructor(private formBuilder: FormBuilder,private router: Router, private userService:UserService,private toastr: ToastrService) {
 		this.loginForm = this.formBuilder.group({
 			email: ['',  [Validators.required, ValidationService.emailValidator]],
 			password: ['',[Validators.required, ValidationService.passwordValidator]]
@@ -52,6 +50,4 @@ export class LoginComponent implements OnInit {
 
 }
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+

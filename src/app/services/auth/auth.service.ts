@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
 import { Injectable }     from '@angular/core';
 import { CanActivate, Router, ActivatedRouteSnapshot, RouterStateSnapshot }    from '@angular/router';
@@ -22,6 +20,3 @@ export class AuthService implements CanActivate {
 	}
 }
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */

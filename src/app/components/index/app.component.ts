@@ -1,6 +1,4 @@
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
 
 import { Component } from '@angular/core';
 
@@ -16,7 +14,7 @@ export class AppComponent {
 
 	// Add few students for initial listing
 	studentsList = [
-	{	
+	{
 		id : 1,
 		first_name : "Sangwin",
 		last_name : "Gawande",
@@ -64,6 +62,4 @@ export class AppComponent {
 	}
 }
 
-/**
- * Created By : Sangwin Gawande (http://sangw.in)
- */
+
