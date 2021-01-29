@@ -1,4 +1,4 @@
-# Angular 5 Basic Demo CRUD Application/Project to be hosted on Google Cloud Run
+# Angular 5 Basic FrontEnd Application/Project to be hosted on Google Cloud Run
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
